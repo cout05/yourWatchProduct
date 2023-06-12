@@ -1,0 +1,175 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  color: #121212;
+  margin: 0;
+}
+
+h1 {
+  font-family: monospace, sans-serif;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 0;
+  position: fixed;
+  top: 0;
+  width: 95%;
+  background-color: white;
+  z-index: 1;
+}
+
+main {
+  margin-top: 100px;
+  position: relative;
+}
+
+#logo {
+  display: flex;
+}
+
+#header-img {
+  max-width: 80px;
+  object-fit: contain;
+}
+
+#nav-bar li {
+  display: inline-block;
+  margin-left: 50px;
+  gap: 1rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+#nav-bar a {
+  color: #121212;
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+#email {
+  padding: 5px 2px;
+  width: 20%;
+  min-width: 300px;
+}
+
+#submit,
+button {
+  background-color: beige;
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 5px 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#features-con {
+  margin: 100px auto 0;
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+}
+
+#features-con article {
+  margin-bottom: 50px;
+}
+
+#review {
+  text-align: center;
+}
+
+#watch-video {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  background-color: grey;
+  margin: 0 auto;
+}
+
+#columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  gap: 1rem;
+}
+
+.product {
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  padding-bottom: 10px;
+  border: 1px solid black;
+}
+
+.product-name {
+  background-color: rgba(128, 128, 128, 0.671);
+  margin: 0;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.price {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+footer {
+  text-align: end;
+  background-color: grey;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 20px 5px;
+}
+
+#footer-navbar li {
+  display: inline-block;
+  margin-left: 50px;
+  text-decoration: none;
+  list-style: none;
+}
+
+#footer-navbar a {
+  color: #121212;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  #header {
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  #nav-bar li {
+    display: block;
+    text-align: center;
+  }
+
+  main {
+    margin-top: 200px;
+    text-align: center;
+  }
+}
